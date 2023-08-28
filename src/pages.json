@@ -1,21 +1,68 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/bookshelf/index",
-			"style": {
-				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor": "#33B4A9",
-				"navigationBarTextStyle": "white"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "纯喜小说",
-		"navigationBarBackgroundColor": "#33B4A9",
-		"backgroundColor": "#33B4A9"
-	},
-	tabBar: {
-
-	}
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/bookshelf/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/bookcity/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#33B4A9",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#33B4A9",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#33B4A9",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "纯喜小说",
+    "navigationBarBackgroundColor": "#33B4A9",
+    "backgroundColor": "#33B4A9",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#33B4A9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/bookshelf/index",
+        "iconPath": "static/tabbar/bookshelf.svg",
+        "selectedIconPath": "static/tabbar/bookshelf-active.svg",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/bookcity/index",
+        "iconPath": "static/tabbar/bookcity.svg",
+        "selectedIconPath": "static/tabbar/bookcity-active.svg",
+        "text": "书城"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/tabbar/mine.svg",
+        "selectedIconPath": "static/tabbar/mine-active.svg",
+        "text": "我的"
+      }
+    ]
+  }
 }

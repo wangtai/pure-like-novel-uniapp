@@ -1,8 +1,7 @@
 <template>
   <view class="content">
     <div class="nav-bar flex-col"><span class="text_2">书架</span></div>
-    <div class="promo">asdf</div>
-    <div class="bookshelf"></div>
+    <div class="promo"></div>
   </view>
 </template>
 
@@ -13,15 +12,13 @@ const title = ref('Hello')
 </script>
 
 <style lang="less">
-//html, body {margin: 0; height: 100%; overflow: hidden}
 .content {
   display: flex;
   flex-direction: column;
   background: #33B4A9;
-  height: calc(100vh );
+  height: 100vh;
   justify-content: flex-start;
   align-items: center;
-
 
   .nav-bar {
     width: 100vw;
@@ -39,25 +36,12 @@ const title = ref('Hello')
       margin-left: 30rpx;
     }
   }
-
   .promo {
     background: #FFFFFF;
     width: 654rpx;
     height: 234rpx;
     margin-top: 30rpx;
     border-radius: 32rpx;
-  }
-
-  .bookshelf {
-    background: #FFFFFF;
-    width: 100vw;
-    min-height: calc(100vh - 88rpx - 44rpx - 30rpx - 234rpx - 26rpx);
-    //height: 100vh;
-    //height: 100%;
-    margin-top: 30rpx;
-    border-top-left-radius: 32rpx;
-    border-top-right-radius: 32rpx;
-    overflow-y: auto;
   }
 }
 
