@@ -21,12 +21,12 @@ import {ref} from 'vue'
 
 const jump = () => {
   uni.reLaunch({
-    url: '/pages/bookshelf/index'
+    url: '/pages/bookshelf/bookshelf'
   });
 };
 setTimeout(() => {
   uni.reLaunch({
-    url: '/pages/bookshelf/index'
+    url: '/pages/bookshelf/bookshelf'
   });
 }, 1000)
 </script>
