@@ -10,9 +10,6 @@
     {
       "path": "pages/bookcity/index",
       "style": {
-        "navigationBarTitleText": "",
-        "navigationBarBackgroundColor": "#33B4A9",
-        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -42,7 +39,7 @@
   "tabBar": {
     "color": "#999999",
     "selectedColor": "#33B4A9",
-    "borderStyle": "black",
+//    "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {

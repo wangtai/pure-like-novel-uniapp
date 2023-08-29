@@ -114,7 +114,7 @@ const title = ref('Hello')
     padding: 24rpx;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     justify-items: flex-start;
 
     .book-cover {
