@@ -1,0 +1,162 @@
+.menu-bg {
+  display: none;
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  overflow: hidden;
+}
+.menu-bg .menu-mask {
+  height: calc(100vh - 488rpx - 40rpx);
+  width: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.menu-bg .menu {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 488rpx;
+  display: flex;
+  padding: 40rpx 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  flex-direction: column;
+  background: white;
+}
+.menu-bg .menu .show-ctrl {
+  display: inline-flex;
+  padding: 0 48rpx 40rpx 48rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40rpx;
+}
+.menu-bg .menu .show-ctrl .title {
+  color: #333;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48rpx;
+  /* 171.429% */
+}
+.menu-bg .menu .show-ctrl .ctrl-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rpx;
+}
+.menu-bg .menu .show-ctrl .ctrl-wrap .ctrl {
+  display: flex;
+  width: 654rpx;
+  align-items: flex-start;
+  gap: 16rpx;
+}
+.menu-bg .menu .show-ctrl .font {
+  justify-content: center;
+  gap: 16px;
+}
+.menu-bg .menu .show-ctrl .font .font-size {
+  display: flex;
+  padding: 8rpx 0;
+  justify-content: center;
+  align-items: center;
+  gap: 8rpx;
+  flex: 1 0 0;
+  border-radius: 10rpx;
+  border: 2rpx solid #E9E9E9;
+  height: 64rpx;
+}
+.menu-bg .menu .show-ctrl .font .a-minus {
+  background: url("../../static/img/novel/a-minus.svg") no-repeat center;
+}
+.menu-bg .menu .show-ctrl .font .a-plus {
+  background: url("../../static/img/novel/a-plus.svg") no-repeat center;
+}
+.menu-bg .menu .show-ctrl .font .font-size-number {
+  display: flex;
+  padding: 0 16rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rpx;
+  color: #0C0C0C;
+  font-size: 32rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80rpx;
+  /* 200% */
+}
+.menu-bg .menu .show-ctrl .theme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16rpx;
+}
+.menu-bg .menu .show-ctrl .theme .theme-color {
+  width: 150rpx;
+  height: 70rpx;
+  flex-shrink: 0;
+  border: 2rpx solid #E9E9E9;
+  border-radius: 12rpx;
+}
+.menu-bg .menu .show-ctrl .theme .theme-item-active {
+  border: 4rpx solid #33B4A9;
+  background-image: url("../../static/img/novel/select.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right bottom !important;
+}
+.menu-bg .menu .show-ctrl .theme .white {
+  background: #fff;
+}
+.menu-bg .menu .show-ctrl .theme .green {
+  background: #E9FFE8;
+}
+.menu-bg .menu .show-ctrl .theme .yellow {
+  background: #FBF0EA;
+}
+.menu-bg .menu .show-ctrl .theme .black {
+  background: #3F3D3C;
+}
+.menu-bg .menu .novel-ctrl {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 102rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  flex-direction: row;
+  padding: 0 48rpx;
+}
+.menu-bg .menu .novel-ctrl .center {
+  color: #0C0C0C;
+  font-size: 32rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63rpx;
+  /* 200% */
+  width: 150rpx;
+  text-align: center;
+}
+.menu-bg .menu .novel-ctrl .left {
+  color: #999;
+  font-size: 24rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44rpx;
+  text-align: left;
+  width: calc((100vw - 96rpx - 150rpx) / 2);
+}
+.menu-bg .menu .novel-ctrl .right {
+  color: #999;
+  text-align: right;
+  font-size: 24rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44rpx;
+  width: calc((100vw - 96rpx - 150rpx) / 2);
+}
+/*# sourceMappingURL=menu.css.map */

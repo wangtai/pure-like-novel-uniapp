@@ -52,7 +52,7 @@
     },
     "quickapp" : {},
     "quickapp-webview" : {
-        "icon" : "static/logo.png",
+        "icon" : "static/img/logo.png",
         "package" : "com.geekcode.purelikenovel"
     },
     "mp-weixin" : {

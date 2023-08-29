@@ -22,12 +22,13 @@
       </div>
       <div class="right">></div>
     </div>
-    <div class="start-btn">开始阅读</div>
+    <div class="start-btn" v-on:click="goToNovel">开始阅读</div>
   </view>
 </template>
 
 <script lang="ts" setup>
 import {ref} from 'vue'
+import {goToNovel} from "@/static/ts/common";
 
 const title = ref('Hello')
 </script>

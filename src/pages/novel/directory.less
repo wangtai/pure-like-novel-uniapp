@@ -1,0 +1,24 @@
+.directory-bg {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .directory-mask {
+    height: 100vh;
+    width: calc(100vw - 648rpx);
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .directory {
+    height: 100vh;
+    width: 648rpx;
+    background: white;
+    overflow-y: auto;
+  }
+}

@@ -43,6 +43,12 @@
         "navigationBarBackgroundColor": "#FCFCFC",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/novel/novel",
+      "style": {
+       'navigationStyle': "custom"
+      }
     }
   ],
   "tabBar": {
@@ -52,20 +58,20 @@
     "list": [
       {
         "pagePath": "pages/bookshelf/bookshelf",
-        "iconPath": "static/tabbar/bookshelf.png",
-        "selectedIconPath": "static/tabbar/bookshelf-active.png",
+        "iconPath": "static/img/tabbar/bookshelf.png",
+        "selectedIconPath": "static/img/tabbar/bookshelf-active.png",
         "text": "书架"
       },
       {
         "pagePath": "pages/bookcity/index",
-        "iconPath": "static/tabbar/bookcity.png",
-        "selectedIconPath": "static/tabbar/bookcity-active.png",
+        "iconPath": "static/img/tabbar/bookcity.png",
+        "selectedIconPath": "static/img/tabbar/bookcity-active.png",
         "text": "书城"
       },
       {
         "pagePath": "pages/mine/index",
-        "iconPath": "static/tabbar/mine.png",
-        "selectedIconPath": "static/tabbar/mine-active.png",
+        "iconPath": "static/img/tabbar/mine.png",
+        "selectedIconPath": "static/img/tabbar/mine-active.png",
         "text": "我的"
       }
     ]

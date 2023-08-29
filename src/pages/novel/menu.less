@@ -1,0 +1,205 @@
+.menu-bg {
+  display: none;
+  //height: calc(100vh - 488rpx - 40rpx);
+  height: 100vh;
+  width: 100vh;
+  //background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  overflow: hidden;
+
+  .menu-mask {
+    height: calc(100vh - 488rpx - 40rpx);
+    //height: 100vh;
+    width: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    //position: fixed;
+    //top: 0;
+    //left: 0;
+    //z-index: 998;
+    overflow: hidden;
+
+  }
+
+  .menu {
+
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 488rpx;
+    display: flex;
+    padding: 40rpx 0;
+    //justify-content: space-between;
+    //align-items: center;
+    //justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    flex-direction: column;
+    background: white;
+
+    .show-ctrl {
+      display: inline-flex;
+      padding: 0 48rpx 40rpx 48rpx;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40rpx;
+
+      .title {
+        color: #333;
+        font-size: 28rpx;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48rpx; /* 171.429% */
+      }
+
+      .ctrl-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8rpx;
+
+        .ctrl {
+          display: flex;
+          width: 654rpx;
+          align-items: flex-start;
+          gap: 16rpx;
+        }
+      }
+
+      .font {
+        //display: flex;
+        //width: 327px;
+        justify-content: center;
+        //align-items: center;
+        gap: 16px;
+
+        .font-size {
+          display: flex;
+          padding: 8rpx 0;
+          justify-content: center;
+          align-items: center;
+          gap: 8rpx;
+          flex: 1 0 0;
+          border-radius: 10rpx;
+          border: 2rpx solid #E9E9E9;
+          height: 64rpx;
+        }
+
+        .a-minus {
+          background: url("../../static/img/novel/a-minus.svg") no-repeat center;
+        }
+
+        .a-plus {
+          background: url("../../static/img/novel/a-plus.svg") no-repeat center;
+        }
+
+        .font-size-number {
+          display: flex;
+          padding: 0 16rpx;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8rpx;
+          color: #0C0C0C;
+          font-size: 32rpx;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 80rpx; /* 200% */
+        }
+      }
+
+      .theme {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16rpx;
+
+        .theme-color {
+          width: 150rpx;
+          height: 70rpx;
+          flex-shrink: 0;
+          border: 2rpx solid #E9E9E9;
+          border-radius: 12rpx;
+        }
+
+
+        .theme-item-active {
+          border: 4rpx solid #33B4A9;
+          background-image: url("../../static/img/novel/select.svg") !important;
+          background-repeat: no-repeat !important;
+          background-position: right bottom !important;
+        }
+
+        .white {
+          background: #fff;
+        }
+
+        .green {
+          background: #E9FFE8;
+        }
+
+        .yellow {
+          background: #FBF0EA;
+        }
+
+        .black {
+          background: #3F3D3C;
+        }
+      }
+
+    }
+
+    .novel-ctrl {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 102rpx;
+      display: flex;
+      //padding: 20rpx 40rpx;
+      //justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      flex-direction: row;
+      //background: red;
+      //width: calc(100% - 96rpx);
+      padding: 0 48rpx;
+
+
+      .center {
+        color: #0C0C0C;
+        font-size: 32rpx;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 63rpx; /* 200% */
+        width: 150rpx;
+        text-align: center;
+        //background: #3f536e;
+      }
+
+      .left {
+        color: #999;
+        font-size: 24rpx;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44rpx;
+        text-align: left;
+        width: calc((100vw - 96rpx - 150rpx) / 2);
+        //background: #3f536e;
+      }
+
+      .right {
+        color: #999;
+        text-align: right;
+        font-size: 24rpx;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44rpx;
+        //background: #3f536e;
+        width: calc((100vw - 96rpx - 150rpx) / 2);
+      }
+    }
+  }
+}

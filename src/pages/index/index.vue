@@ -4,7 +4,7 @@
       <img
           class="image_1"
           referrerpolicy="no-referrer"
-          src="../../static/index/logo.png"
+          src="../../static/img/index/logo.png"
       />
       <div class="image-text_1 flex-row justify-between">
         <div class="section_1 flex-col"></div>
@@ -32,6 +32,6 @@ setTimeout(() => {
 </script>
 
 <style lang="less">
-@import "../../static/common.less";
+@import "src/static/style/common.less";
 @import "index.less";
 </style>
