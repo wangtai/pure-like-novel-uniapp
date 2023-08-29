@@ -25,9 +25,9 @@
     {
       "path": "pages/catalog/index",
       "style": {
-        "navigationBarTitleText": "分类",
-        "navigationBarBackgroundColor": "#33B4A9",
-        "navigationBarTextStyle": "white"
+        "navigationBarTitleText": "全部分类",
+        "navigationBarBackgroundColor": "white",
+        "navigationBarTextStyle": "black"
       }
     },
     {
