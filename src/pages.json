@@ -23,7 +23,7 @@
       }
     },
     {
-      "path": "pages/catalog/index",
+      "path": "pages/catalog/catalog",
       "style": {
         "navigationBarTitleText": "全部分类",
         "navigationBarBackgroundColor": "white",
@@ -35,14 +35,14 @@
       "style": {
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/description/description",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
-//  "globalStyle": {
-//    "navigationBarTextStyle": "white",
-//    "navigationBarTitleText": "纯喜小说",
-//    "navigationBarBackgroundColor": "#33B4A9",
-//    "backgroundColor": "#33B4A9",
-//  },
   "tabBar": {
     "color": "#999999",
     "selectedColor": "#33B4A9",

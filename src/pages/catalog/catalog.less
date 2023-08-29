@@ -1,0 +1,68 @@
+.content {
+  .suggest-menu {
+    width: 100%;
+    margin-top: 40rpx;
+
+    .scroll-wrap {
+      display: flex;
+      flex-direction: row;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 0 48rpx;
+
+      .suggest-menu-item {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 14rpx 34rpx;
+        font-size: 28rpx;
+        font-weight: 500;
+        line-height: 40rpx;
+        color: #999999;
+      }
+
+      .active {
+        color: #33B4A9 !important;
+        border-radius: 34rpx;
+        border: 2rpx solid #33B4A9;
+      }
+    }
+  }
+
+  .book-list {
+    margin: 0 48rpx;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .book {
+      margin-top: 48rpx;
+      .cover {
+        width: 200rpx;
+        height: 280rpx;
+        background: #E6F7F6;
+        border-radius: 24rpx;
+      }
+
+      .title {
+        margin-top: 24rpx;
+        width: 200rpx;
+        height: 40rpx;
+        font-size: 28rpx;
+        font-weight: 500;
+        color: #333333;
+        line-height: 40rpx;
+      }
+
+      .tips {
+        margin-top: 8rpx;
+        width: 200rpx;
+        height: 34rpx;
+        font-size: 24rpx;
+        font-weight: 400;
+        color: #999999;
+        line-height: 34rpx;
+      }
+    }
+  }
+}
