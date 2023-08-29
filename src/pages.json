@@ -10,6 +10,8 @@
     {
       "path": "pages/bookcity/index",
       "style": {
+
+        "navigationStyle": "custom"
       }
     },
     {
@@ -21,43 +23,48 @@
       }
     },
     {
-      "path": "pages/index/index",
+      "path": "pages/catalog/index",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationBarTitleText": "分类",
         "navigationBarBackgroundColor": "#33B4A9",
         "navigationBarTextStyle": "white"
       }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
-  "globalStyle": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "纯喜小说",
-    "navigationBarBackgroundColor": "#33B4A9",
-    "backgroundColor": "#33B4A9",
-    "navigationStyle": "custom"
-  },
+//  "globalStyle": {
+//    "navigationBarTextStyle": "white",
+//    "navigationBarTitleText": "纯喜小说",
+//    "navigationBarBackgroundColor": "#33B4A9",
+//    "backgroundColor": "#33B4A9",
+//  },
   "tabBar": {
     "color": "#999999",
     "selectedColor": "#33B4A9",
-//    "borderStyle": "black",
+    //    "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/bookshelf/index",
-        "iconPath": "static/tabbar/bookshelf.svg",
-        "selectedIconPath": "static/tabbar/bookshelf-active.svg",
+        "iconPath": "static/tabbar/bookshelf.png",
+        "selectedIconPath": "static/tabbar/bookshelf-active.png",
         "text": "书架"
       },
       {
         "pagePath": "pages/bookcity/index",
-        "iconPath": "static/tabbar/bookcity.svg",
-        "selectedIconPath": "static/tabbar/bookcity-active.svg",
+        "iconPath": "static/tabbar/bookcity.png",
+        "selectedIconPath": "static/tabbar/bookcity-active.png",
         "text": "书城"
       },
       {
         "pagePath": "pages/mine/index",
-        "iconPath": "static/tabbar/mine.svg",
-        "selectedIconPath": "static/tabbar/mine-active.svg",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png",
         "text": "我的"
       }
     ]

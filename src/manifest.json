@@ -42,7 +42,12 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : true
+            }
         }
     },
     "quickapp" : {},

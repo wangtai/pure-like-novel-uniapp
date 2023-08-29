@@ -1,0 +1,56 @@
+.page {
+  background-color: #33b4a9;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.page .box_1 {
+  background-image: url(../../static/index/bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .box_1 .image_1 {
+  width: 600rpx;
+  height: 312rpx;
+  margin-top: calc(50vh - 300rpx);
+}
+.page .box_1 .image-text_1 {
+  align-self: center;
+  margin-bottom: 120rpx;
+}
+.page .box_1 .image-text_1 .section_1 {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  width: 112rpx;
+  height: 112rpx;
+  margin: 6rpx 20rpx 2rpx 0;
+}
+.page .box_1 .image-text_1 .text-group_1 {
+  align-items: center;
+}
+.page .box_1 .image-text_1 .text-group_1 .text_1 {
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 72rpx;
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 72rpx;
+}
+.page .box_1 .image-text_1 .text-group_1 .text_2 {
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 40rpx;
+  margin: 8rpx 14rpx 0 0;
+}
+/*# sourceMappingURL=index.css.map */

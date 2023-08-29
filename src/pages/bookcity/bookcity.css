@@ -73,13 +73,17 @@
   padding: 48rpx 48rpx 100rpx 48rpx;
 }
 .content .suggest .suggest-title {
-  width: 144rpx;
   height: 50rpx;
-  font-size: 36rpx;
-  font-weight: 600;
   color: #FFFFFF;
   line-height: 50rpx;
   margin-bottom: 32rpx;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.content .suggest .suggest-title .left {
+  font-size: 36rpx;
+  font-weight: 600;
 }
 .content .suggest .suggest-menu {
   width: 100%;

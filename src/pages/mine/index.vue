@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <div class="nav-bar flex-col"><span class="text_2">书架</span></div>
+    <div class="nav-bar flex-col"><span class="text_2">启动</span></div>
     <div class="promo"></div>
   </view>
 </template>

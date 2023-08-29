@@ -47,7 +47,12 @@
     </div>
     <div class="suggest">
       <div class="suggest-title">
-        小编推荐
+        <div class="left">
+          小编推荐
+        </div>
+        <div class="right" v-on:click="jump">
+          全部分类>
+        </div>
       </div>
       <div class="suggest-menu">
         <div class="scroll-wrap">
@@ -122,6 +127,11 @@
 import {ref} from 'vue'
 
 const title = ref('Hello')
+const jump = () => {
+  uni.navigateTo({
+    url: '/pages/catalog/index'
+  });
+};
 </script>
 
 <style lang="less">

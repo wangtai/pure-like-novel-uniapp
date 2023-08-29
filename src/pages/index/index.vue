@@ -1,48 +1,37 @@
 <template>
-  <view class="content">
-    <div class="nav-bar flex-col"><span class="text_2">书架</span></div>
-    <div class="promo"></div>
-  </view>
+  <div class="page flex-col" v-on:click="jump">
+    <div class="box_1 flex-col">
+      <img
+          class="image_1"
+          referrerpolicy="no-referrer"
+          src="../../static/index/logo.png"
+      />
+      <div class="image-text_1 flex-row justify-between">
+        <div class="section_1 flex-col"></div>
+        <div class="text-group_1 flex-col">
+          <span class="text_1">纯喜小说</span>
+          <span class="text_2">让小说慢慢发热发光</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-
 <script lang="ts" setup>
 import {ref} from 'vue'
 
-const title = ref('Hello')
+const jump = () => {
+  uni.reLaunch({
+    url: '/pages/bookshelf/index'
+  });
+};
+setTimeout(() => {
+  uni.reLaunch({
+    url: '/pages/bookshelf/index'
+  });
+}, 1000)
 </script>
 
 <style lang="less">
-.content {
-  display: flex;
-  flex-direction: column;
-  background: #33B4A9;
-  height: 100vh;
-  justify-content: flex-start;
-  align-items: center;
-
-  .nav-bar {
-    width: 100vw;
-    height: 88rpx;
-    background: #33B4A9;
-    //background: red;
-    margin-top: 44rpx;
-    //padding: 0 30rpx;
-
-    .text_2 {
-      font-size: 36rpx;
-      font-weight: 500;
-      color: #FFFFFF;
-      line-height: 88rpx;
-      margin-left: 30rpx;
-    }
-  }
-  .promo {
-    background: #FFFFFF;
-    width: 654rpx;
-    height: 234rpx;
-    margin-top: 30rpx;
-    border-radius: 32rpx;
-  }
-}
-
+@import "../../static/common.less";
+@import "index.less";
 </style>

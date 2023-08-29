@@ -1,0 +1,62 @@
+.page {
+  background-color: rgba(51, 180, 169, 1);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .box_1 {
+    background-image: url(../../static/index/bg.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .image_1 {
+      width: 600rpx;
+      height: 312rpx;
+      margin-top: calc(50vh - 300rpx);
+    }
+
+    .image-text_1 {
+      align-self: center;
+      margin-bottom: 120rpx;
+
+      .section_1 {
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 16rpx;
+        width: 112rpx;
+        height: 112rpx;
+        margin: 6rpx 20rpx 2rpx 0;
+      }
+
+      .text-group_1 {
+        align-items: center;
+
+        .text_1 {
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 72rpx;
+          font-weight: bold;
+          text-align: left;
+          white-space: nowrap;
+          line-height: 72rpx;
+        }
+
+        .text_2 {
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 28rpx;
+          font-weight: 500;
+          text-align: left;
+          white-space: nowrap;
+          line-height: 40rpx;
+          margin: 8rpx 14rpx 0 0;
+        }
+      }
+    }
+  }
+}
