@@ -9,7 +9,7 @@
       <div class="image-text_1 flex-row justify-between">
         <div class="section_1 flex-col"></div>
         <div class="text-group_1 flex-col">
-          <span class="text_1">纯喜小说</span>
+          <span class="text_1">萌+小说</span>
           <span class="text_2">让小说慢慢发热发光</span>
         </div>
       </div>
@@ -28,7 +28,7 @@ setTimeout(() => {
   uni.reLaunch({
     url: '/pages/bookshelf/bookshelf'
   });
-}, 1000)
+}, 3000)
 </script>
 
 <style lang="less">

@@ -1,0 +1,60 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content .logo {
+  margin-top: 216rpx;
+  width: 168rpx;
+  height: 168rpx;
+  flex-shrink: 0;
+  border-radius: 33rpx;
+  background: url('../../static/img/logo.jpeg'), lightgray 50% no-repeat;
+  background-size: contain;
+}
+.content .setting-menu {
+  margin-top: 120rpx;
+  padding: 0 40rpx;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 80rpx);
+}
+.content .setting-menu .setting-menu-item {
+  border-bottom: 2rpx solid #E5E5E5;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx 0;
+  color: #0C0C0C;
+  font-size: 32rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64rpx;
+  /* 200% */
+}
+.content .setting-menu .setting-menu-item .left {
+  line-height: 64rpx;
+  /* 200% */
+}
+.content .setting-menu .goto:after {
+  content: "";
+  width: 48rpx;
+  height: 48rpx;
+  background: url("../../static/img/mine/arrow.svg") no-repeat center;
+}
+.content .version {
+  color: #999;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48rpx;
+  /* 171.429% */
+  position: fixed;
+  bottom: 148rpx;
+}
+/*# sourceMappingURL=mine.css.map */
