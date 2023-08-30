@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import {ref} from "vue";
+import NovelDirectory from "@/pages/novel/novel-directory.vue";
+import NovelMenu from "@/pages/novel/novel-menu.vue";
 
 uni.setNavigationBarColor({
   frontColor: '#000000',
@@ -8,16 +10,26 @@ uni.setNavigationBarColor({
 uni.setNavigationBarTitle({
   title: '小说'
 })
-const menu = ref(null)
+const menuVisibility = ref<string>('none');
 const closeMenu = () => {
   console.log('closeMenu')
-  menu.value!.style.display = 'none'
+  menuVisibility.value = 'none';
 }
 const popupMenu = () => {
   console.log('popupMenu')
-  menu.value!.style.display = 'block'
+  menuVisibility.value = 'block';
 }
 
+const dirVisibility = ref<string>('none')
+const closeDir = () => {
+  console.log('closeMenu')
+  dirVisibility.value = 'none';
+}
+const popupDir = () => {
+  console.log('popupMenu')
+  menuVisibility.value = 'none';
+  dirVisibility.value = 'flex';
+}
 </script>
 
 <template>
@@ -43,49 +55,13 @@ const popupMenu = () => {
         第七章 第 8/12 页
       </div>
     </div>
-    <div ref="menu" class="menu-bg">
-      <div class="menu-mask" v-on:click="closeMenu"></div>
-      <div class="menu">
-        <div class="show-ctrl">
-          <div class="font ctrl-wrap">
-            <div class="title">字体</div>
-            <div class="ctrl">
-              <div class="font-size a-minus"></div>
-              <div class="font-size-number">16</div>
-              <div class="font-size a-plus"></div>
-            </div>
-          </div>
-          <div class="theme ctrl-wrap">
-            <div class="title">主题</div>
-            <div class="ctrl">
-              <div class="theme-color white"></div>
-              <div class="theme-color green"></div>
-              <div class="theme-color yellow theme-item-active"></div>
-              <div class="theme-color black"></div>
-            </div>
-          </div>
-        </div>
-        <div class="novel-ctrl">
-          <div class="left">上一章</div>
-          <div class="center">目录</div>
-          <div class="right">下一章</div>
-        </div>
-      </div>
-    </div>
-    <div class="directory-bg">
-      <div class="directory-mask"></div>
-      <div class="directory"></div>
-    </div>
+    <novel-menu :visibility="menuVisibility" @click-mask="closeMenu" @popup-dir="popupDir"/>
+    <novel-directory :visibility="dirVisibility" @close-dir="closeDir"/>
   </view>
 </template>
 
 <style lang="less" scoped>
 @import "novel";
 @import "menu";
-@import "directory";
 
-uni-page-head__title {
-  background: #FBF0EA;
-  color: #2c405a !important;
-}
 </style>

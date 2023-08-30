@@ -6,6 +6,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  //display: none;
   flex-direction: row-reverse;
 
   .directory-mask {
@@ -20,5 +21,43 @@
     width: 648rpx;
     background: white;
     overflow-y: auto;
+    padding: 186rpx 60rpx 60rpx 60rpx;
+
+    .title {
+      color: #555;
+      font-size: 40rpx;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72rpx; /* 180% */
+    }
+
+    .chapters {
+      margin-top: 48rpx;
+
+      .chapter {
+        padding: 24rpx 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+        color: #333;
+        font-size: 28rpx;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48rpx; /* 171.429% */
+        border-bottom: 2rpx solid #E5E5E5;
+        width: 528rpx;
+        max-height: 120rpx;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        //word-break: break-all;
+      }
+
+      .active {
+        color: #33B4A9;
+      }
+    }
   }
 }
