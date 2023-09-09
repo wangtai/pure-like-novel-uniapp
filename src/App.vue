@@ -3,9 +3,9 @@ import {onLaunch, onShow, onHide} from "@dcloudio/uni-app";
 
 onLaunch(() => {
   console.log("App Launch");
-  uni.reLaunch({
-    url: '/pages/index/index'
-  });
+  // uni.reLaunch({
+  //   url: '/pages/index/index'
+  // });
 });
 onShow(() => {
   console.log("App Show");
