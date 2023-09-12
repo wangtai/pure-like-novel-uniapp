@@ -23,7 +23,7 @@
       "path": "pages/catalog/catalog",
       "style": {
         "navigationBarTitleText": "全部分类",
-        "navigationBarBackgroundColor": "white",
+        "navigationBarBackgroundColor": "#000000",
         "navigationBarTextStyle": "black"
       }
     },
@@ -44,7 +44,7 @@
     {
       "path": "pages/novel/novel",
       "style": {
-       'navigationStyle': "custom"
+       "navigationStyle": "custom"
       }
     }
   ],

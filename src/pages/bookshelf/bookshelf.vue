@@ -1,7 +1,7 @@
 <template>
   <view class="content">
     <div class="nav-bar flex-col"><span class="text_2">书架</span></div>
-    <div class="promo" v-on:click="goToBook">
+    <div class="promo" @click="goToBook">
       <div class="book-cover">
 
       </div>

@@ -15,7 +15,7 @@
         <div class="left">
           小编推荐
         </div>
-        <div class="right" v-on:click="jump">
+        <div class="right" @click="jump">
           全部分类>
         </div>
       </div>
